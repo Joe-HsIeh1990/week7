@@ -1,0 +1,54 @@
+.nav{
+    height: 108px;
+    background-color: $bgcolor;
+    padding: 0 4.5833%;
+    
+    @include phone(){
+        position: relative;
+        height: auto;
+        padding: 0 ;
+    }
+   &-menu{
+       position: absolute;
+       top: 13px;
+       left: 4.2667%;
+       display: none;
+       @include phone(){
+           display: block;
+    }
+
+   }
+   &-img{
+       @include phone(){
+           padding: 10.3px;
+           width: 100%;
+       }
+      img{
+         @include phone(){
+             width: 48px;
+         }
+      }
+   }
+   &-content{
+    @include phone(){
+        width: 100%;
+        display: none;
+    }
+   }
+   &-item{
+       margin-left: 64px;
+       a{
+           font-size: 20px;
+           line-height: 30px;
+       }
+       @include pad(){
+           margin-left: 40px;
+       }
+       @include phone(){
+           padding: 14.2px 0;
+           width: 100%;
+           margin-left: 0;
+           border: 1px solid #ffffff;
+       }
+   } 
+}

@@ -1,0 +1,521 @@
+.head {
+    background: url("../images/68.png") center center no-repeat;
+    background-size: cover;
+    height: 840px;
+    @include phone() {
+        background: url("../images/68@2x.png") center center no-repeat;
+        background-size: cover;
+    }
+    &-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        height: 100%;
+        @include pad() {
+            max-width: 672px;
+            margin: 0 auto;
+        }
+        @include phone() {
+            max-width: 352px;
+            margin: 0 auto;
+        }
+    }
+    &-content {
+        small {
+            color: $textcolor-heavy;
+            font-size: 36px;
+            line-height: 54px;
+            font-weight: 700;
+            @include pad() {
+                font-size: 20px;
+                line-height: 30px;
+            }
+            @include phone() {
+                font-size: 16px;
+                line-height: 30px;
+            }
+        }
+        h1 {
+            color: $textcolor-heavy;
+            font-size: 64px;
+            line-height: 96px;
+            font-weight: 700;
+            @include pad() {
+                font-size: 48px;
+                line-height: 72px;
+            }
+            @include phone() {
+                font-size: 32px;
+                line-height: 72px;
+            }
+        }
+    }
+}
+.main {
+    height: 544px;
+    background-color: #aa06010d;
+    @include pad() {
+        height: auto;
+    }
+    h2 {
+        padding-top: 61.5px;
+        padding-bottom: 41.5px;
+        font-size: 48px;
+        line-height: 72px;
+        font-weight: bold;
+        color: $textcolor-heavy;
+        @include pad() {
+            font-size: 32px;
+            line-height: 48px;
+            padding-top: 38.5px;
+            padding-bottom: 30.5px;
+        }
+        @include phone() {
+            font-size: 24px;
+            padding: 30.5px 0;
+        }
+    }
+    &-content {
+        max-width: 1200px;
+        margin: 0 auto;
+        @include pad() {
+            max-width: 672px;
+            margin: 0 auto;
+        }
+        @include phone() {
+            max-width: 352px;
+            margin: 0 auto;
+        }
+    }
+    &-item {
+        width: 25%;
+        @include pad() {
+            width: 50%;
+            margin-bottom: 20px;
+        }
+        @include phone() {
+            width: 100%;
+            margin-bottom: 28px;
+        }
+        h4 {
+            color: $textcolor-heavy;
+            font-size: 24px;
+            line-height: 36px;
+            margin-bottom: 4px;
+            font-weight: bold;
+            @include pad() {
+                font-size: 20px;
+                line-height: 30px;
+            }
+        }
+        p {
+            padding: 0 37px;
+            font-size: 16px;
+            line-height: 24px;
+            @include pad() {
+                padding: 0 50px;
+            }
+            @include phone() {
+                padding: 0 64px;
+            }
+        }
+    }
+    &-img {
+        height: 100px;
+        margin-bottom: 40px;
+        @include pad() {
+            height: 80px;
+        }
+    }
+    &-order1 {
+        order: 1;
+        @include pad() {
+            order: 3;
+        }
+    }
+    &-order2 {
+        order: 2;
+        @include pad() {
+            order: 1;
+        }
+    }
+    &-order3 {
+        order: 3;
+        @include pad() {
+            order: 2;
+        }
+    }
+    &-order4 {
+        order: 4;
+    }
+}
+.glasses {
+    padding-top: 20px;
+}
+.classic {
+    height: auto;
+    padding-bottom: 80px;
+    @include pad() {
+        padding-bottom: 40px;
+    }
+    @include phone() {
+        padding-bottom: 24px;
+    }
+    h2 {
+        font-weight: bold;
+        padding-top: 61.5px;
+        padding-bottom: 41.5px;
+        color: $textcolor-heavy;
+        font-size: 48px;
+        line-height: 72px;
+        @include pad() {
+        }
+        @include phone() {
+            padding-top: 16.5px;
+            padding-bottom: 8.5px;
+            font-size: 24px;
+            line-height: 48ox;
+        }
+    }
+    &-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        @include pad {
+            max-width: 672px;
+            margin: 0 auto;
+        }
+        @include phone {
+            max-width: 352px;
+            margin: 0 auto;
+        }
+    }
+    &-item {
+        overflow: hidden;
+        margin-bottom: 32px;
+        @include pad {
+            margin-bottom: 8px;
+        }
+    }
+    &-img {
+        @include pad {
+            width: 61.1607%;
+        }
+        @include phone {
+            width: 100%;
+            position: relative;
+        }
+        div {
+            display: none;
+            @include pad() {
+                display: none;
+            }
+            @include phone() {
+                display: flex;
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                p {
+                    color: #ffff;
+                    text-transform: uppercase;
+                    font-size: 28px;
+                    line-height: 42px;
+                    font-weight: bold;
+                    font-style: italic;
+                    margin-left: 8px;
+                }
+            }
+        }
+    }
+    &-text {
+        @include pad {
+            width: 38.8393%;
+        }
+        @include phone {
+            display: none;
+        }
+        img {
+            margin-left: 24px;
+        }
+        p {
+            margin-right: 24px;
+            font-size: 48px;
+            line-height: 72px;
+            color: $textcolor-red;
+            font-weight: bold;
+            font-style: italic;
+            text-transform: uppercase;
+            @include pad {
+                font-size: 28px;
+                line-height: 42px;
+            }
+        }
+    }
+}
+.unity {
+    background: url("../images/nick-owuor-astro-nic-visuals-54Q_HvMWtVE-unsplash.png") center center no-repeat;
+    background-size: cover;
+    height: 2162px;
+    @include pad() {
+        height: 1221px;
+    }
+    @include phone() {
+        height: 1096px;
+    }
+    h2 {
+        color: #ffff;
+        font-size: 48px;
+        line-height: 72px;
+        font-weight: bold;
+        padding-top: 61.5px;
+        padding-bottom: 57.5px;
+        @include pad() {
+            font-size: 32px;
+            line-height: 48px;
+            padding-top: 38.5px;
+            padding-bottom: 30.5px;
+        }
+        @include phone() {
+            font-size: 24px;
+            line-height: 36px;
+            padding-top: 24px;
+            padding-bottom: 16px;
+        }
+    }
+    &-container {
+        max-width: 1539px;
+        margin: 0 auto;
+        height: auto;
+        margin-bottom: 60px;
+        img {
+            width: 100%;
+        }
+        @include pad() {
+            max-width: 672px;
+            margin-bottom: 40px;
+        }
+        @include phone() {
+            max-width: 327px;
+            margin-bottom: 20px;
+        }
+    }
+}
+.twice {
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-bottom: 80px;
+    @include pad() {
+        max-width: 672px;
+        margin-bottom: 0;
+    }
+    @include phone() {
+        max-width: 352px;
+        margin-bottom: 0;
+    }
+    &-img {
+        max-width: 585px;
+        position: relative;
+        @include pad() {
+            max-width: 324px;
+            height: 280px;
+        }
+        @include phone() {
+            max-width: 352px;
+            margin-bottom: 20px;
+        }
+        img {
+            height: 100%;
+            width: 100%;
+        }
+    }
+    &-text {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(225, 225, 225, 0.5);
+        h2 {
+            font-size: 72px;
+            line-height: 108px;
+            color: $textcolor-red;
+            @include pad() {
+                font-size: 32px;
+                line-height: 25px;
+            }
+        }
+    }
+}
+.custom {
+    top: 0;
+    width: 100%;
+    margin-top: -400px;
+    margin-bottom: 80px;
+    @include pad() {
+        margin-top: -416px;
+        margin-bottom: 40px;
+    }
+    @include phone() {
+        margin-top: -230px;
+        margin-bottom: 24px;
+    }
+    h2 {
+        color: #ffff;
+        font-size: 48px;
+        line-height: 72px;
+        font-weight: bold;
+        padding-top: 61.5px;
+        padding-bottom: 57.2px;
+        @include pad() {
+            font-size: 32px;
+            line-height: 48px;
+            padding-top: 38.5px;
+            padding-bottom: 30.5px;
+        }
+        @include phone() {
+            font-size: 24px;
+            line-height: 36px;
+            padding-top: 24px;
+            padding-bottom: 16px;
+        }
+    }
+    &-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        @include pad() {
+            max-width: 672px;
+        }
+        @include phone() {
+            max-width: 352px;
+        }
+    }
+    &-item {
+        max-width: 282px;
+        @include pad() {
+            max-width: 324px;
+            margin-bottom: 24px;
+        }
+        @include phone() {
+            max-width: 352px;
+            margin-bottom: 16px;
+        }
+    }
+    &-img {
+        img {
+            width: 100%;
+            @include pad() {
+                height: 256px;
+            }
+        }
+    }
+    &-text {
+        border: 1px solid #dee2e6;
+        background-color: #fff;
+        padding: 16px;
+        h4 {
+            padding-bottom: 16px;
+            font-size: 16px;
+            line-height: 21px;
+            font-weight: bold;
+        }
+        p {
+            margin-bottom: 16px;
+            font-size: 16px;
+            line-height: 24px;
+        }
+        span {
+            margin-bottom: 16px;
+        }
+    }
+}
+.ask {
+    background-color: #aa06010d;
+ 
+    &-container {
+        max-width: 792px;
+        margin: 0 auto;
+        @include pad(){
+            max-width: 498px;
+        }
+        @include phone(){
+            max-width: 327px;
+        }
+        h2 {
+            padding-top: 61.5px;
+            color: #000;
+            font-size: 48px;
+            line-height: 72px;
+            padding-bottom: 21.5px;
+            font-weight: bold;
+        }
+        p{
+            font-size: 20px;
+            line-height: 30px;
+            margin-bottom: 20px;
+        }
+    }
+    &-item{
+        width: 100%;
+        label{
+            font-size: 16px;
+            line-height: 24px;
+            margin-bottom: 4px;
+        }
+        input{
+            width: 100%;
+            height: 50px;
+            border: 1px solid #000;
+            background-color: inherit;
+            margin-bottom: 16px;
+            @include pad {
+                margin-bottom: 12px;
+            }
+            @include phone {
+                height: 36px;
+            }
+        }
+        textarea{
+            background-color: inherit;
+            border: 1px solid #000;
+            height: 136px;
+            margin-bottom: 16px;
+            @include pad {
+                margin-bottom: 12px;
+            }
+            @include phone {
+                height: 100px;
+            }
+        }
+    }
+    &-check{
+        margin-bottom: 42px;
+        @include phone {
+            margin-bottom: 20px;
+        }
+        input{
+            width: 24px;
+            height: 24px;
+            background-color: inherit;
+        }
+        label{
+            font-size: 16px;
+            line-height: 24px;
+            margin-left: 4px;
+        }
+    }
+    &-buttom{
+        width: 100%;
+        input{
+            width: 180px;
+            height: 54px;
+            color: #ffff;
+            background-color: #AA0601;
+            margin-bottom: 108px;
+            @include pad(){
+                width: 136px;
+                height: 36px;
+                margin-bottom: 56px;
+            }
+        }
+    }
+}
